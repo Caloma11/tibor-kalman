@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!-->
+<html><!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <title>Tibor Kalman</title>
+  <meta name="author" content="Clarisse Pinto">
+  <meta name="description" content="This is a student created website highlighting the life and work of graphic designer Tibor Kalman.">
+  <meta name="keywords" content="tibor, kalman, graphic design, colors magazine">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="icon" type="image/png" href="logo.png" sizes="32x32"/>
+</head>
+    
+<body>
+<nav>
+    <ul>
+        <a id="logo" href="index.html"><img src="logo.png" height="35px"> </a>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="mco.html">M&amp;Co</a></li>
+        <li><a class="active" href="work.html">Work</a></li>
+        <li><a href="bio.html">Bio</a></li>
+    </ul>
+</nav>
+    
+<section> 
+<div class="sidebar">
+    <a class="sidebaritem" href="colors.html">Colors</a><br>
+    <a class="sidebaritem" id="click" href="florent.html">Restaurant Florent</a><br>
+    <a class="sidebaritem" href="manifesto.html">Manifesto</a><br>
+    <a class="sidebaritem" href="commercial.html">Commercial</a><br>
+    <a class="sidebaritem" href="dear.html">Dear Tibor</a><br>
+    <a class="sidebaritem" href="misc.html">Miscellaneous</a><br>
+</div>  
+</section>    
+        
+
+<section class="grid-work">
+
+<!-- The four columns -->
+    <div class="row">
+          <div class="column">
+            <img src="rf1.jpg" alt="COLORS 1" style="width:80%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="rf10.jpg" alt="COLORS 2" style="width:80%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="rf11.jpg" alt="COLORS 3" style="width:80%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="rf12.jpg" alt="COLORS 4" style="width:80%" onclick="myFunction(this);">
+          </div>
+        </div>  
+        <br>
+    <div class="row">    
+          <div class="column">
+            <img src="rf2.jpg" alt="COLORS 5" style="width:80%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="rf3.jpg" alt="COLORS 6" style="width:80%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="rf4.jpg" alt="COLORS 7" style="width:80%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="rf5.jpg" alt="COLORS 8" style="width:80%" onclick="myFunction(this);">
+          </div>  
+    </div>
+        <br>
+    <div class="row">
+          <div class="column">
+            <img src="rf6.jpg" alt="COLORS 9" style="width:80%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="rf7.jpg" alt="COLORS 10" style="width:80%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="rf8.jpg" alt="COLORS 11" style="width:80%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="rf9.jpg" alt="COLORS 12" style="width:80%" onclick="myFunction(this);">
+          </div>
+    </div>
+        <br>
+    <div class="row">
+    </div>
+
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+    </div>
+</section>    
+    
+<script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
+    
+    
+</body>
+</html>

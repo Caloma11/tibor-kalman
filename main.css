@@ -1,0 +1,544 @@
+body { 
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding-top: 5px;
+    padding-bottom: 2px;
+    background-color: #fff;
+    height: 60px;
+    border-bottom-style: solid;
+    border-bottom-color: #000;
+    border-bottom-width: medium;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: "oswald", sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    padding-top: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: #000;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    color: gainsboro;
+}
+
+.active {
+    color: red;
+}
+
+#logo {
+    float: left;
+    padding-top: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-decoration: none;
+}
+
+
+
+/*index*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.grid-container>div {
+  text-align: center;
+  padding:20px 0;
+  font-size: 30px;
+}
+
+@keyframes tibor {
+    from {margin-left: -500px;}
+    to {margin-left: 150px;}
+}
+
+#tib {
+    font-family: "garamond", serif;
+    font-size: 4em;
+    margin-left: 150px;
+    margin-top: 45px;
+    letter-spacing: 5px;
+    padding: none;
+    position: absolute;
+    animation-name: tibor;
+    animation-duration: 3s;
+}
+
+@keyframes kal-small {
+    from {margin-top: -385px;}
+    to {margin-top:-50px}
+}
+
+#kal2 {
+    font-family: "oswald", sans-serif;
+    font-size: 4em;
+    color: red;
+    margin-left: 150px;
+    margin-top: -50px;
+    position: absolute;
+    margin-top: none;
+    letter-spacing: 3px;
+    animation-name: kal-small;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes kalman {
+    from {margin-top: 2000px;}
+    to {margin-top:-1000px;}
+}
+
+.kal-large {
+    font-family: "oswald", sans-serif;
+    font-size: 13em;
+    line-height: 1em;
+    color: red;
+    margin-left: 0px;
+    position: absolute;
+    letter-spacing: 17px;
+    animation-name: kalman;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+
+
+
+/*all page titles*/
+
+.titles {
+    font-family: "oswald", sans-serif;
+    font-size: 8em;
+    color: red;
+    margin-left: 150px;
+    margin-top: -50px;
+    position: absolute;
+}
+
+
+
+/*bio*/
+
+.grid-bio {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.grid-bio>div {
+  text-align: center;
+  padding:20px 0;
+}
+
+#bio {
+    font-family: "roboto", sans-serif;
+    font-weight: 100;
+    font-size: .9em;
+    line-height: 1.5em;
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+}
+
+@keyframes love {
+    from {margin-left: -800px;}
+    to {margin-left: 0px;}
+}
+
+#q1 {
+    font-family: "oswald", sans-serif;
+    color: #000;
+    font-size: 3em;
+    line-height: 1.2em; 
+    margin-top: -40px;
+    margin-bottom: 0px;
+    z-index: -1;
+    animation-name: love;
+    animation-duration: 3s;
+}
+
+#q2 {
+    font-family: "oswald", sans-serif;
+    color: red;
+    font-size: 3.5em;
+    line-height: 1.4em; 
+    margin-top: 1300px;
+    margin-left: 1020px;
+    position: absolute;
+    z-index: -1;
+}
+
+#date {
+    font-family: "oswald", sans-serif;
+    color: red;
+    font-size: 6em;
+    font-weight: 600;
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 1050px;
+    z-index: -1;
+}
+
+#date2 {
+    font-family: "oswald", sans-serif;
+    color: red;
+    font-size: 6em;
+    font-weight: 600;
+    position: absolute;
+    margin-left: 900px;
+    margin-top: 1850px;
+    z-index: -1;
+}
+
+
+
+/*work*/
+
+.sidebar {
+    float: left;
+    margin-top: 60px;
+    padding-top: 200px;
+    padding-left: 40px;
+    display: block;   
+}   
+.sidebaritem {
+    padding: 10px;
+    font-family: "oswald", sans-serif;
+    font-size: 1em;
+    color: #000;
+    text-decoration: none;
+    line-height: 3em;
+}
+.sidebaritem:nth-of-type(odd) {
+    color: red;
+}
+
+sidebaritem a:hover:not(#click) {
+    color: gainsboro;
+}
+#click {
+    font-size: 1.6em;
+}
+
+#q3 {
+    font-family: "oswald", sans-serif;
+    color: red;
+    font-size: 2.6em;
+    text-align: center;
+    line-height: 1.7em; 
+    margin-top: 115px;
+    margin-left: 480px;
+    position: absolute;
+}
+
+@keyframes q3-slide {
+    from {margin-left: 1500px; margin-top: 115px; position: absolute;}
+    to {margin-left: 480px;}
+}
+
+#q3-slide {
+    font-family: "oswald", sans-serif;
+    color: transparent;
+    font-size: 2.6em;
+    text-align: center;
+    line-height: 1.7em; 
+    margin-top: 115px;
+    margin-left: 480px;
+    position: absolute;
+    animation-name: q3-slide;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+
+.black {
+    color: black;
+}
+
+.white {
+    color: transparent;
+}
+
+
+/*work galleries*/
+
+.grid-work {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: 50px;
+  padding: 10px;
+  margin-top: 80px;
+  margin-left: 250px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+  position: absolute;
+}
+.grid-work>div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+    margin-bottom: -75px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 1; 
+    cursor: pointer; 
+}
+
+.column img:hover {
+    opacity: 0.8;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    float: left;
+}
+
+/* The expanding image container */
+.container {
+    position: absolute;
+    float: right;
+    margin-left: 650px;
+    align-content: center;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+
+/*mco*/
+
+.grid-mco {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 40px;
+  padding: 60px;
+  padding-top: 120px;
+
+}
+.grid-mco>div {
+  text-align: center;
+  padding:20px 0;
+}
+
+#mco-text  {
+    margin-top: 250px;
+}
+
+@keyframes q5 {
+    from {margin-left: -800px;}
+    to {margin-left: 120px;}
+}
+
+#q5 {
+    font-family: "oswald", sans-serif;
+    color: #000;
+    font-size: 3em;
+    line-height: 1.2em; 
+    margin-top: 280px;
+    margin-left: 120px;
+    position: absolute;
+    z-index: 1;
+    animation-name: q5;
+    animation-duration: 3s;
+}
+
+@keyframes oxy {
+    from {margin-top: -100px;}
+    to {margin-top: 280px;}
+}
+
+#q5oxy {
+    font-family: "oswald", sans-serif;
+    color: red;
+    font-size: 3em;
+    line-height: 1.2em; 
+    margin-top: 280px;
+    margin-left: 120px;
+    position: absolute;
+    z-index: -1;
+    animation-name: oxy;
+    animation-duration: 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: backwards;
+    animation-timing-function:ease;
+}
+
+
+
+
+/*resources*/
+
+.grid-resou {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: 50px;
+  padding: 10px;
+  margin-left: 35%;
+  margin-top: 350px;
+  position: fixed;
+}
+
+.resou-text {
+    font-family: "oswald", sans-serif;
+    font-size: 1em;
+    color: red;
+    line-height: 2.5em;
+}
+
+#web {
+    text-decoration: none;
+}
+
+#paper {
+    margin-top: 300px;
+    position: absolute;
+}
+
+#q4 {
+    font-family: "oswald", sans-serif;
+    color: red;
+    font-size: 2.8em;
+    text-align: center;
+    line-height: 1.3em; 
+    margin-top: 300px;
+    margin-left: 68%;
+    position: absolute;
+}
+
+@keyframes q4-slide {
+    from {margin-top: -500px;}
+    to {margin-top: 300px;}
+}
+
+#q4-slide {
+    font-family: "oswald", sans-serif;
+    color: red;
+    font-size: 2.8em;
+    text-align: center;
+    line-height: 1.3em; 
+    margin-top: 300px;
+    margin-left: 68%;
+    position: absolute;
+    animation-name: q4-slide;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.books:link {
+    color: red;
+}
+
+.books:visited {
+    color:black;
+}
+
+.books:hover {
+    color:gainsboro;
+}
+
+.web:link {
+    color: black;
+    font-weight: 100;
+}
+
+.web:visited {
+    color:red;
+}
+
+.web:hover {
+    color:gainsboro;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
